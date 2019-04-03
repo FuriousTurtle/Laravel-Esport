@@ -13,5 +13,5 @@
 
 Route::get('/', 'HomeController@oof')->name('accueil');
 
-Route::get('/schedule', 'HomeController@schedule')->name('BOUFTOU');
+Route::get('/schedule', 'HomeController@schedule')->name('schedule');
 Auth::routes();
