@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>ESTournament</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./../resources/sass/stylesheettemplate.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ asset('css/stylesheettemplate.css') }}">
     @yield('css')
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC" rel="stylesheet">
     <script src="main.js"></script>
@@ -15,21 +15,21 @@
 <body>
 
     <div class="header">
-        <div class="brand"><img class="brandlogo" src="./../resources/img/ESTlogo.png"><a class="brandname"
+        <div class="brand"><img class="brandlogo" src="{{ asset('img/ESTlogo.png') }}"><a class="brandname"
                 href="#">BlueWolf Arena</a></div>
         <div class="sponsordiv">
             <p>SPONSORED BY</p>
             <img class="sponsorlogo" style='margin-top:7px;' width='60px' height='20px'
-                src="./../resources/img/benqlogo.png">
-            <img class="sponsorlogo" width='30px' height='30px' src="./../resources/img/logitechlogo.png">
+                src="{{ asset('img/benqlogo.png') }}">
+            <img class="sponsorlogo" width='30px' height='30px' src="{{ asset('img/logitechlogo.png') }}">
             <img class="sponsorlogo" style="margin-top:-5px;" width='40px' height='50px'
-                src="./../resources/img/monsterlogo.png">
+                src="{{ asset('img/monsterlogo.png') }}">
             <img class="sponsorlogo" style="margin-bottom:20px;" width='35px' height='35px'
-                src="./../resources/img/omenlogo.png">
+                src="{{ asset('img/omenlogo.png') }}">
             <img class="sponsorlogo" style="margin-bottom:20px;" width='35px' height='35px'
-                src="./../resources/img/razerlogo.png">
+                src="{{ asset('img/razerlogo.png') }}">
             <img class="sponsorlogo" style="margin-bottom:20px;" width='50px' height='35px'
-                src="./../resources/img/steellogo.png">
+                src="{{ asset('img/steellogo.png') }}">
         </div>
     </div>
 
@@ -38,7 +38,7 @@
             <a class="a2" href='{{ route("accueil")}}'>Accueil</a>
             <a class="a2" href='{{ route("schedule")}}'>Résultats semaine</a>
             <a class="a2">Classement</a>
-            <a class="a2">Teams</a>
+            <a class="a2" href='{{ route("teams")}}'>Teams</a>
             <a class="a2">Fanstore</a>
             <a class="a2 alast">Médias</a>
         </div>
@@ -64,10 +64,10 @@
         </div>
         <div class="footer3">
             <h2>Réseau sociaux</h2>
-            <img src="./../resources/img/facebook.png">
-            <img src="./../resources/img/instagram.png">
-            <img src="./../resources/img/youtube.png">
-            <img src="./../resources/img/twitter.png">
+            <img src="{{ asset('img/facebook.png') }}">
+            <img src="{{ asset('img/instagram.png') }}">
+            <img src="{{ asset('img/youtube.png') }}">
+            <img src="{{ asset('img/youtube.png') }}">
             <h2>Contactez-nous</h2>
             <p>contactus@bluewolf.info</p>
             <p>+33 77 48 86 01</p>

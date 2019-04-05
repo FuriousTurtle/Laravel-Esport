@@ -1,16 +1,11 @@
 @extends('layouts.webtemplate')
-<?php
-$composant = 'accueil';
-$dir = '../resources/views/components/' . $composant . '/';
-
-?>
 
 @section('css')
-<link rel="stylesheet" href="<?=$dir . $composant?>style.css">
+<link rel="stylesheet" href="{{ asset('css/accueilstyle.css') }}">
 @endsection
 
 @section('js')
-<script type="text/javascript" src="<?=$dir . $composant?>script.js"></script>
+<script type="text/javascript" src="{{ asset('js/accueilscript.js') }}"></script>
 @endsection
 
 @section('html')
