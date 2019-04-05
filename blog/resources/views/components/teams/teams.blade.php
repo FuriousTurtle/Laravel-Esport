@@ -10,5 +10,6 @@
 
 @section('html')
 <?php
+print_r($teams);
 ?>
 @endsection
