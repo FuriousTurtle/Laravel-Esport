@@ -14,4 +14,7 @@ $dir = '../resources/views/components/' . $composant . '/';
 @endsection
 
 @section('html')
+<?php
+print_r($team);
+?>
 @endsection
