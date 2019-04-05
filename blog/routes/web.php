@@ -13,5 +13,7 @@
 
 Route::get('/', 'HomeController@oof')->name('accueil');
 
-Route::get('/schedule', 'HomeController@schedule')->name('BOUFTOU');
+Route::get('/schedule', 'HomeController@schedule')->name('schedule');
+Route::get('/team/{id}', 'HomeController@team')->name('team');
+Route::get('/teams', 'HomeController@teams')->name('teams');
 Auth::routes();

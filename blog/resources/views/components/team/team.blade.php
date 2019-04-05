@@ -6,7 +6,7 @@ $dir = '../resources/views/components/' . $composant . '/';
 ?>
 
 @section('css')
-<link rel="stylesheet" href="<?=$dir . $composant?>style.css">
+<link rel="stylesheet" href="{{ asset('css/teamstyle.css') }}">
 @endsection
 
 @section('js')
@@ -14,4 +14,7 @@ $dir = '../resources/views/components/' . $composant . '/';
 @endsection
 
 @section('html')
+<?php
+print_r($team);
+?>
 @endsection
