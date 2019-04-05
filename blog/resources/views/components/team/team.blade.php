@@ -1,6 +1,6 @@
 @extends('layouts.webtemplate')
 <?php
-$composant = 'accueil';
+$composant = 'team';
 $dir = '../resources/views/components/' . $composant . '/';
 
 ?>
@@ -14,4 +14,7 @@ $dir = '../resources/views/components/' . $composant . '/';
 @endsection
 
 @section('html')
+<?php
+print_r($team);
+?>
 @endsection
