@@ -67,7 +67,7 @@
             <img src="{{ asset('img/facebook.png') }}">
             <img src="{{ asset('img/instagram.png') }}">
             <img src="{{ asset('img/youtube.png') }}">
-            <img src="{{ asset('img/youtube.png') }}">
+            <img src="{{ asset('img/twitter.png') }}">
             <h2>Contactez-nous</h2>
             <p>contactus@bluewolf.info</p>
             <p>+33 77 48 86 01</p>

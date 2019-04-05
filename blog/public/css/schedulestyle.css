@@ -26,6 +26,7 @@
 .date{
     grid-column: 2/3;
     font-style: italic;
+    color: #555555;
 }
 
 .team{
