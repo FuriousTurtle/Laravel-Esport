@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use PDO;
+
 class HomeController extends Controller
 {
     /**
@@ -28,6 +30,9 @@ class HomeController extends Controller
         return view('components.accueil.accueil');
     }
     public function schedule(){
-        return view('components.schedule.schedule');
+        /*$BDD = new PDO('mysql:host=localhost;dbname=e-sport', 'root2', 'azerty');*/
+        $result = DB::select('SELECT * FROM result WHERE score_team1 AND score_team2 = TBD');
+        $reponse = $result->fetchAll();
+        return view('components.schedule.schedule', ['result' => $reponse] );
     }
 }
