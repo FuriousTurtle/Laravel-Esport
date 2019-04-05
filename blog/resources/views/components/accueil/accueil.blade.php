@@ -2,6 +2,7 @@
 <?php
 $composant = 'accueil';
 $dir = '../resources/views/components/' . $composant . '/';
+
 ?>
 
 @section('css')
