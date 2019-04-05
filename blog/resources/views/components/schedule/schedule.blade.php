@@ -9,24 +9,21 @@
 @endsection
 
 @section('html')
-<br><br>
-<?php
+<div class="schediv">
+    <?php
 $i = 0;
 foreach ($result as $row) {
     if ($i == 0) {
         $i++;
         $scoreteam = 'score_team' . $i;
-        echo '<p style="display:inline;">' . $row->equip_name . ' - ' . $row->$scoreteam;
+        echo '<div class="teamline""><div class="team">' . $row->equip_name . '</div><div class="score">' . $row->$scoreteam;
     } else if ($i == 1) {
-        $i++;
-        echo ' - ' . $row->equip_name . '</p>';
-    }
-    if ($i == 2) {
-        echo '<br><br>';
         $i = 0;
+        echo '</div><div class="team">' . $row->equip_name . '</div></div>';
     }
     ;
 }
 ?>
+</div>
 
 @endsection
