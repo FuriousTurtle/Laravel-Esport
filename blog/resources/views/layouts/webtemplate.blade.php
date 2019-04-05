@@ -16,7 +16,7 @@
 
     <div class="header">
         <div class="brand"><img class="brandlogo" src="{{ asset('img/ESTlogo.png') }}"><a class="brandname"
-                href="#">BlueWolf Arena</a></div>
+                href='{{ route("accueil")}}'>BlueWolf Arena</a></div>
         <div class="sponsordiv">
             <p>SPONSORED BY</p>
             <img class="sponsorlogo" style='margin-top:7px;' width='60px' height='20px'
