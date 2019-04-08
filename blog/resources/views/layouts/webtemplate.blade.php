@@ -40,7 +40,7 @@
             <a class="a2">Classement</a>
             <a class="a2" href='{{ route("teams")}}'>Teams</a>
             <a class="a2">Fanstore</a>
-            <a class="a2 alast">Médias</a>
+            <a class="a2 alast" href='{{ route("media")}}'>Médias</a>
         </div>
     </div>
     <div class="main">

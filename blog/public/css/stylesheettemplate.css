@@ -1,3 +1,7 @@
+* {
+    box-sizing: initial!important;
+}
+
 html {
     background-image: url(../img/dudpyyq71f011.jpg);
     background-position: center;
@@ -9,8 +13,8 @@ html {
 body {
     border-radius: 5px;
     width:75vw;
-    margin:0 auto;
-    margin-top: 50px;
+    margin:0 auto!important;
+    margin-top: 50px!important;
     display: grid;
     grid-template-rows: 0.2fr auto 2fr auto auto;
     grid-template-columns: 0.6fr 3fr 0.6fr;
@@ -42,20 +46,22 @@ body {
 
 .menulist a {
     background-color: rgba(0,0,0,.5);
-    margin-top:5px;
+    margin-top:5px!important;
     display: block;
     padding: 18px;
     padding-top:20px;
     padding-bottom:20px;
     font-size: 19px;
     text-decoration: none;
-    color:white;
+    color:white!important;
     font-weight: bold;
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .menulist a:hover {
     background-color: rgba(255,255,255,.1);
+    color:white!important;
+    text-decoration: none;
 }
 
 .menulist .a2 {
