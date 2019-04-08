@@ -1,5 +1,6 @@
 * {
-    box-sizing: initial!important;
+    box-sizing: border-box;
+    line-height: 1!important;
 }
 
 html {
@@ -45,7 +46,9 @@ body {
 }
 
 .menulist a {
+    box-sizing: initial!important;
     background-color: rgba(0,0,0,.5);
+    height: auto!important;
     margin-top:5px!important;
     display: block;
     padding: 18px;
@@ -105,13 +108,18 @@ body {
     padding:10px;
 }
 
+.brandname:hover {
+    color:white;
+    text-decoration: none;
+}
+
 .sponsordiv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: space-evenly;
     width: 17%;
-    height: auto;
+    height: 155px;
     margin-right: 70px;
     margin-bottom: 20px;
 }
@@ -130,7 +138,7 @@ body {
     grid-row: 1/2;   
     text-align: center;
     font-weight: bold;
-    margin-bottom: -15px;
+    margin-top: 15px!important;
 }
 
 .footer1 {
