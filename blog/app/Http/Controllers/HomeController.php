@@ -31,7 +31,7 @@ class HomeController extends Controller
     }
     public function schedule()
     {
-        $result = DB::select("SELECT team.equip_name, score_team1, score_team2, team.logo, result.date FROM result INNER JOIN team ON result.team_id_1 = team.id OR result.team_id_2 = team.id WHERE result.score_team1 = 'TBD' AND result.score_team2 = 'TBD'");
+        $result = DB::select("SELECT team.team_name, score_team1, score_team2, team.logo, result.date FROM result INNER JOIN team ON result.team_id_1 = team.id OR result.team_id_2 = team.id WHERE result.score_team1 = 'TBD' AND result.score_team2 = 'TBD'");
         return view('components.schedule.schedule', ['result' => $result]);
     }
     public function team($id)
@@ -40,7 +40,11 @@ class HomeController extends Controller
         return view('components.team.team', ['team' => $team]);
     }
     public function teams(){
-        $teams = DB::select("SELECT logo, equip_name FROM team");
+        $teams = DB::select("SELECT logo, team_name FROM team");
         return view('components.teams.teams', ['teams' => $teams]);
+    }
+
+    public function media(){
+        $media = DB::select("SELECT");
     }
 }
