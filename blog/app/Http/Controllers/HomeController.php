@@ -43,8 +43,7 @@ class HomeController extends Controller
         $teams = DB::select("SELECT logo, team_name FROM team");
         return view('components.teams.teams', ['teams' => $teams]);
     }
-
     public function media(){
-        $media = DB::select("SELECT");
+        return view('components.media.media');
     }
 }
