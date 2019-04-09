@@ -16,7 +16,7 @@
 
     <div class="header">
         <div class="brand"><img class="brandlogo" src="{{ asset('img/ESTlogo.png') }}"><a class="brandname"
-                href="#">BlueWolf Arena</a></div>
+                href='{{ route("accueil")}}'>BlueWolf Arena</a></div>
         <div class="sponsordiv">
             <p>SPONSORED BY</p>
             <img class="sponsorlogo" style='margin-top:7px;' width='60px' height='20px'
@@ -40,7 +40,7 @@
             <a class="a2">Classement</a>
             <a class="a2" href='{{ route("teams")}}'>Teams</a>
             <a class="a2">Fanstore</a>
-            <a class="a2 alast">Médias</a>
+            <a class="a2 alast" href='{{ route("media")}}'>Médias</a>
         </div>
     </div>
     <div class="main">
