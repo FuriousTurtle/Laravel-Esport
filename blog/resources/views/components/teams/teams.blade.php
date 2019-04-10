@@ -16,7 +16,7 @@ foreach ($teams as $row) {
 
     $logo = 'logo';
     $team_name = 'team_name';
-    echo '<div class="logo"><a href="{{route("team")}}"><img width="100px" height="100px" src="/laravel-esport/blog/public/img/teams/' . $row->$logo . '"><p>';
+    echo '<div class="logo"><a href=\''?> {{ route("team") }} <?php '\'><img width="100px" height="100px" src="/laravel-esport/blog/public/img/teams/' . $row->$logo . '"><p>';
     echo $row->$team_name . '</p></a></div>';
 }
 
