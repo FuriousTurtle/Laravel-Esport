@@ -45,7 +45,7 @@ class HomeController extends Controller
 
     public function teams()
     {
-        $teams = DB::select("SELECT logo, team_name FROM team");
+        $teams = DB::select("SELECT logo, team_name, id FROM team");
         return view('components.teams.teams', ['teams' => $teams]);
     }
 
