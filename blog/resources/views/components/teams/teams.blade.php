@@ -10,14 +10,14 @@
 
 @section('html')
 <div class="teams">
-<?php
+    <?php
 
-foreach($teams as $row){
+foreach ($teams as $row) {
 
-$logo = 'logo';
-$team_name = 'team_name';
-echo '<ul><li class="logo"><img width="50px" height="50px" src="/laravel-esport/blog/public/img/teams/'.$row->$logo.'"><li>';
-echo $row->$team_name.'</ul>';
+    $logo = 'logo';
+    $team_name = 'team_name';
+    echo '<div class="logo"><a href="#"><img width="100px" height="100px" src="/laravel-esport/blog/public/img/teams/' . $row->$logo . '"><p>';
+    echo $row->$team_name . '</p></a></div>';
 }
 
 ?>
