@@ -5,13 +5,9 @@
 @endsection
 
 @section('js')
-<script type="text/javascript" src="{{ asset('js/teamscript.js"}}></script>
+<script type="text/javascript" src="{{ asset('js/teamscript.js')}}"></script>
 @endsection
 
 @section('html')
-<?php
-
-print_r($team);
-
-?>
+<p>oof</p>
 @endsection
