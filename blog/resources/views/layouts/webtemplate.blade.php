@@ -36,7 +36,7 @@
     <div class="menu">
         <div class="menulist">
             <a class="a2" href='{{ route("accueil")}}'>Accueil</a>
-            <a class="a2" href='{{ route("schedule")}}'>Résultats semaine</a>
+            <a class="a2" href='{{ route("schedule")}}'>Matchs à venir</a>
             <a class="a2">Classement</a>
             <a class="a2" href='{{ route("teams")}}'>Teams</a>
             <a class="a2">Fanstore</a>
