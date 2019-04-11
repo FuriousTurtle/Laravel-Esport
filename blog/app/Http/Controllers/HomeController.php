@@ -51,6 +51,13 @@ class HomeController extends Controller
 
     public function media()
     {
-        return view('components.media.media');
+        $media = DB::select("SELECT team_name, logo, id FROM team");
+        return view('components.media.media', ['media' => $media]);
+    }
+
+    public function player($id)
+    {
+        $player = DB::select("SELECT birth_player, country_player, img_player, name_player, pseudo_player, roles_player, team.team_name, team.logo, team.flag FROM player INNER JOIN team ON team.id = player.team_id WHERE player.id = " . $id);
+        return view('components.player.player', ['player' => $player]);
     }
 }
