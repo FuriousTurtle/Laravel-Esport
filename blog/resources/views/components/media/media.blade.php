@@ -49,7 +49,7 @@
     </div>
 </div>
 <div class="grid">
-    @foreach
+    @foreach ($teams as $team)
     <div class="grid-item"></div>
     @endforeach
 </div>
