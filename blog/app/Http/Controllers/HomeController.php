@@ -39,7 +39,7 @@ class HomeController extends Controller
 
     public function team($id)
     {
-        $team = DB::select("SELECT * FROM team INNER JOIN player ON team.id = player.team_id WHERE team.id = " . $id);
+        $team = DB::select("SELECT * FROM team INNER JOIN player ON team.id = player.team_id WHERE player.team_id = " . $id);
         return view('components.team.team', ['team' => $team]);
     }
 

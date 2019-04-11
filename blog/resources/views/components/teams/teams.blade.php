@@ -10,19 +10,17 @@
 
 @section('html')
 <div class="teams">
-    <?php
-$link;
 
-foreach ($teams as $row) {
+    @foreach ($teams as $row)
 
-    $logo = 'logo';
-    $team_name = 'team_name';
-    echo '<div class="logo"><a href=\''?> {{ route("team", ["id"=> <?=$row->id?> ]) }} <?php ' \'><img width="100px" height="100px"
-    src="/laravel-esport/blog/public/img/teams/' . $row->$logo . '"><p>';
-    echo $row->$team_name . '</p></a>
-</div>';
-}
 
-?>
+    <div class="logo"><a href="{{ route('team',['id'=>$row->id]) }}"><img width="100px" height="100px"
+                src="{{ 'img/teams/'.$row->logo }}">
+            <p>{{ $row->team_name }}</p>
+        </a>
+
+    </div>
+
+    @endforeach
 </div>
 @endsection

@@ -16,6 +16,7 @@
     font-weight: bold;
     margin:30px;
     display: grid;
+    max-width: 160px;
     grid-template-rows: 1fr auto;
     grid-template-columns: 1fr;
 }
