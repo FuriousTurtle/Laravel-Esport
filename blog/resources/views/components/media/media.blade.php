@@ -20,37 +20,39 @@
 @endsection
 
 @section('html')
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="{{asset('/img/media/media_G2.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_FaZe.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_Natus_Vincere.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_fnatic.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_NiP.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_MIBR.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_Astralis.jpg')}}" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-            <img src="{{asset('/img/media/media_Vitality.jpg')}}" class="d-block w-100" alt="...">
+<div class="content">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{asset('/img/media/media_G2.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_FaZe.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_Natus_Vincere.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_fnatic.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_NiP.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_MIBR.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_Astralis.jpg')}}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{asset('/img/media/media_Vitality.jpg')}}" class="d-block w-100" alt="...">
+            </div>
         </div>
     </div>
-</div>
-<div class="grid">
-    @foreach
-    <div class="grid-item"></div>
-    @endforeach
+    <div class="grid">
+        @foreach ($media as $team)
+        <div class="grid-item"><img width="130px;" src='img/teams/{{$team->logo}}'></div>
+        @endforeach
+    </div>
 </div>
 @endsection
