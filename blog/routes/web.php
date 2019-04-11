@@ -17,4 +17,5 @@ Route::get('/schedule', 'HomeController@schedule')->name('schedule');
 Route::get('/team/{id}', 'HomeController@team')->name('team');
 Route::get('/teams', 'HomeController@teams')->name('teams');
 Route::get('/media', 'HomeController@media')->name('media');
+Route::get('/player/{id}', 'HomeController@player')->name('player');
 Auth::routes();

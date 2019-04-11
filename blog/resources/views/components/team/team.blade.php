@@ -21,6 +21,7 @@
     <div class="playerdiv">
         @foreach($team as $player)
         <div class="players">
+        <a href="{{ route('player',['id'=>$player->id]) }}">
             <img class="player" src="{{ '../img/teams/'.$player->img_player }}">
             <p class="playername">{{$player->pseudo_player}}</p>
         </div>
