@@ -1,3 +1,81 @@
 .main {
     background-color: rgba(0,0,0,0.5);
 }
+
+.teamtext {
+    color:white;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+    line-height: 40px!important;
+    text-align: start;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.team .logo {
+    margin:0 auto;
+    margin-bottom: 0px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+}
+
+.flag {
+    display:inline-block;
+    width: 40px;
+    margin-right: 0px;
+}
+
+.logoname {
+    display: table;
+    margin: 0 auto;
+}
+
+.playerdiv {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.players {
+    display:grid;
+    grid-template-rows: 1fr auto;
+    width:200px;
+    background-color: rgba(200,200,200,.7);
+    border-radius: 10px;
+    border: 2px solid black;
+    margin:15px;
+}
+
+.player {
+    grid-row: 1/2;
+    width: 200px;
+}
+
+.playername {
+    text-align: center;
+    grid-row: 2/3;
+    color:black;
+    font-weight: bold;
+    border-top:2px solid black;
+    margin-top:0px;
+    padding-top:15px;
+    font-size: 20px;
+}
+
+.coach {
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+}
