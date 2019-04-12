@@ -1,10 +1,13 @@
 .schediv {
-    background-color: rgba(130,130,130,.3);
     padding:20px;
 }
 
+.main {
+    background-color: rgba(0,0,0,0.5);
+}
+
 .schediv .teamline {
-    background-color: rgba(200,200,200,.3);
+    background-color: rgba(200,200,200,.6);
     border: 2px solid black;
     border-radius: 1px;
     padding: 15px 0px;
