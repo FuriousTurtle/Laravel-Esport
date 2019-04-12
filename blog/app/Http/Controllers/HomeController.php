@@ -60,4 +60,10 @@ class HomeController extends Controller
         $player = DB::select("SELECT birth_player, country_player, img_player, name_player, pseudo_player, roles_player, team.team_name, team.logo, team.flag FROM player INNER JOIN team ON team.id = player.team_id WHERE player.id = " . $id);
         return view('components.player.player', ['player' => $player]);
     }
+
+    public function classement()
+    {
+        $classement = DB::select("SELECT team_name, total_score, logo, id FROM team ORDER BY total_score DESC");
+        return view('components.classement.classement', ['classement' =>$classement]);
+    }
 }
