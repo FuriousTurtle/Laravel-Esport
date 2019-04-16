@@ -9,14 +9,19 @@
 @endsection
 
 @section('html')
+
 <div class="classement">
 
-@foreach($classement as $row)
+    @foreach($classement as $row)
 
-<div class="team">
-<img width="100px" height="100px" src="{{ 'img/teams/'.$row->logo }}"> <p class="teamName">{{ $row->team_name}}</p><p class="teamScore"> ({{ $row->total_score}} points) </p>
+    <div class="team">
+        <img width="100px" height="100px" src="{{ 'img/teams/'.$row->logo }}">
+        <p class="teamName">{{ $row->team_name}}</p>
+        <p class="teamScore"> {{ $row->total_score}} pts</p>
+    </div>
+
+    @endforeach
+
 </div>
 
-@endforeach
-</div>
 @endsection
