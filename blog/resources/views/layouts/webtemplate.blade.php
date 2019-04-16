@@ -39,7 +39,7 @@
             <a class="a2" href='{{ route("schedule")}}'>Matchs à venir</a>
             <a class="a2" href='{{ route("classement")}}'>Classement</a>
             <a class="a2" href='{{ route("teams")}}'>Teams</a>
-            <a class="a2">Fanstore</a>
+            <a class="a2" href='https://shop.eslgaming.com/collections/all-team-products'>Fanstore</a>
             <a class="a2 alast" href='{{ route("media")}}'>Médias</a>
         </div>
     </div>
