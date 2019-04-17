@@ -1,9 +1,14 @@
 .teams {
     display: flex;
     justify-content: space-evenly;
-    width: 700px;
+    width: 95%;
+    margin: 0 auto;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+.main {
+    background-color: rgba(0,0,0,0.5);
 }
 
 .logo {
