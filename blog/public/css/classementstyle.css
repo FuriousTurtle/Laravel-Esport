@@ -1,20 +1,28 @@
 .team{
     color:white;
     font-size:25px;
-    
-}
-
-.team{
-    background-color: rgba(200,200,200,.6);
+    background-color: rgba(200,200,200,.3);
     border: 2px solid black;
     border-radius: 1px;
-    padding: 15px 0px;
-    width: auto;
+    padding: 5px 0px;
+    width: 80%;
+    margin: 0px auto;
     margin-bottom: 10px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .classement{
     display: flex;
     flex-direction: column;
+}
+
+.team img {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.team p {
+    line-height: 50px!important;
 }
