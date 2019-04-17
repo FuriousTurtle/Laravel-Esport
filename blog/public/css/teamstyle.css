@@ -54,7 +54,7 @@ h1 {
     display:grid;
     grid-template-rows: 1fr auto;
     width:200px;
-    background-color: rgba(200,200,200,.7);
+    background-color: rgba(200,200,200,.2);
     border-radius: 10px;
     border: 2px solid black;
     margin:15px;
@@ -71,7 +71,7 @@ h1 {
     color:black;
     font-weight: bold;
     border-top:2px solid black;
-    margin-top:0px;
+    margin-top:-3px;
     padding-top:15px;
     font-size: 20px;
 }
