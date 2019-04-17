@@ -6,6 +6,11 @@ body {
     color:white;
 }
 
+.main {
+    background-color: rgba(0,0,0,0.5);
+}
+
+
 .picture {
     display: block;
     margin: 0 auto;
